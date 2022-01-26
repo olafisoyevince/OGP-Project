@@ -1,8 +1,8 @@
-
+import Section3 from "./Section3";
 function App() {
   return (
     <div>
-      <h1>OGP - platform</h1>
+      <Section3 />
     </div>
   );
 }
