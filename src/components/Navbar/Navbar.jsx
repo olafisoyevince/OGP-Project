@@ -1,28 +1,30 @@
 import React from 'react';
 import { Nav, Bars, NavMenu, NavLink, NavBtnLink } from './NavbarElements';
+import path from "../../routes.js";
+
 
 const Navbar = () => {
   return (
   <>
     <Nav>
-      <div to="/" style={{display: 'flex', alignItems: 'center' }}>
+      <div to={path.home} style={{display: 'flex', alignItems: 'center' }}>
         <img src="../images/ogp-logo.png" alt="ogp-logo" style={{ width: '150px' }} />
       </div>
       <Bars />
       <NavMenu>
-        <NavLink to="/home" activeStyle>
+        <NavLink to={path.home} activestyle="true">
           Home
         </NavLink>
-        <NavLink to="/reports" activeStyle>
+        <NavLink to={path.reports} activestyle="true">
           Reports
         </NavLink>
-        <NavLink to="/about" activeStyle>
+        <NavLink to={path.about} activestyle="true">
           About
         </NavLink>
-        <NavLink to="/dashboard" activeStyle>
+        <NavLink to={path.dashboard} activestyle="true">
           Dashboard
         </NavLink>
-        <NavBtnLink to="/login/register">Login/Register</NavBtnLink>
+        <NavBtnLink to={path.login}>Login</NavBtnLink>
       </NavMenu>
     </Nav>
   </>
