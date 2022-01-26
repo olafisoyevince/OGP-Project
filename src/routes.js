@@ -3,5 +3,6 @@ export default Object.freeze({
 	reports: '/reports',
 	about: '/about',
 	dashboard: '/dashboard',
-	login: '/login'
+	login: '/login',
+	register: '/register'
 })

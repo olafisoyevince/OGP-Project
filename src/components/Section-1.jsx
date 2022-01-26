@@ -1,4 +1,8 @@
 import React from 'react';
+import OGPLogo2 from '../assets/images/ogp-logo-2.png';
+import PlateauLogo from '../assets/images/plateau-logo.png';
+
+
 
 const Section1 = () => {
   return (
@@ -7,7 +11,7 @@ const Section1 = () => {
         <div className='container-mask'>
           <div className='one-card'>
             <div className='one-img'>
-              <img src="../images/ogp-logo-2.png" alt="" style={{ width: '50px' }}/>
+              <img src={OGPLogo2} alt="" style={{ width: '50px' }}/>
             </div>
             <div className='one-text'>
               <h4>Open Government Partnership</h4>
@@ -18,7 +22,7 @@ const Section1 = () => {
 
           <div className='one-card' style={{backgroundColor: '#003B49', color: '#fff'}}>
             <div className='one-img'>
-              <img src="../images/plateau-logo.png" alt="" style={{ width: '50px' }} />
+              <img src={PlateauLogo} alt="" style={{ width: '50px' }} />
             </div>
             <div className='one-text'>
               <h4>Plateau State Government</h4>

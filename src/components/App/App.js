@@ -10,10 +10,10 @@ function App() {
       <Navbar />
       <Section1 />
       <Routes>
-        <Route path={path.home} />
-        <Route path={path.reports} />
-        <Route path={path.about} />
-        <Route path={path.dashboard} />
+        <Route exact path={path.home} />
+        <Route exact path={path.reports} />
+        <Route exact path={path.about} />
+        <Route exact path={path.dashboard} />
       </Routes>
     </>
   );
