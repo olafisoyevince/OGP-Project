@@ -1,1 +1,1 @@
-# ogp-plateau-client
+# Plateau State Open Governance Partnership
