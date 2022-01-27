@@ -1,12 +1,13 @@
 import React from 'react';
 import { Nav, Bars, NavMenu, NavLink, NavBtnLink } from './NavbarElements';
+import OgpLogo from '../../assets/images/ogp-logo.png';
 
 const Navbar = () => {
   return (
   <>
     <Nav>
       <div to="/" style={{display: 'flex', alignItems: 'center' }}>
-        <img src="../images/ogp-logo.png" alt="ogp-logo" style={{ width: '150px' }} />
+        <img src={ OgpLogo } alt="ogp-logo" style={{ width: '150px' }} />
       </div>
       <Bars />
       <NavMenu>

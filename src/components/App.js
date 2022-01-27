@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Section1 from './Section-1';
+import Section1 from '../components/Section1/Section-1';
 
 function App() {
   return (
