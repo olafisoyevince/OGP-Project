@@ -12,7 +12,7 @@ const Section1 = () => {
             <div className='one-text'>
               <h4>Open Government Partnership</h4>
               <p>The Open Government Partnership is a multilateral initiative that promote open government to strengthen governance</p>
-              <button>READ MORE</button>
+              <button className='one-btn'>READ MORE</button>
             </div>
           </div>
 
@@ -23,11 +23,16 @@ const Section1 = () => {
             <div className='one-text'>
               <h4>Plateau State Government</h4>
               <p>Plateau State is the twelfth largest state of Nigeria, and is roughly located in the center of the country</p>
-              <button className='one-btn'>READ MORE</button>
+              <button className='one-btn-2'>READ MORE</button>
             </div>
           </div>
         </div>
+
+        <div>
+           
+        </div>
       </section>
+
     </>
   );
 };

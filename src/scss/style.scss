@@ -11,19 +11,49 @@
 
   & .one-card {
     display: flex; 
-    padding: 20px;
+    padding: 30px 20px;
     box-shadow: -1px 5px 27px 0px rgba(0,0,0,0.25);
 
     & .one-text {
       padding-left: 30px;
+      
+      & h4 {
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+      }
+
+      & p {
+        font-size: 0.7rem;
+        padding-bottom: 10px;
+        line-height: 20px;
+      }
 
       & .one-btn {
         color: #FF7D45;
         text-decoration: none;
+        background-color: white;
+        border-style: none;
+        border-left: 2px solid #FF7D45;
+        border-right: 2px solid #FF7D45;
+        padding: 0 6px;
+        letter-spacing: 1px;
+        width: 80px;
+        font-size: 0.6rem;
+        font-weight: bold;
+      }
+
+      & .one-btn-2 {
+        color: #FF7D45;
+        text-decoration: none;
         background-color: #003B49;
         border-style: none;
-        border-left: 3px;
-        border-right: 2px ;
+        border-left: 2px solid #FF7D45;
+        border-right: 2px solid #FF7D45;
+        padding: 0 6px;
+        letter-spacing: 1px;
+        width: 80px;
+        font-size: 0.6rem;
+        font-weight: bold;
       }
     }
   }
