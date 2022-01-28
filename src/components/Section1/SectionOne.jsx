@@ -4,6 +4,7 @@ import PlateauLogo from '../../assets/images/plateau-logo.png';
 import Man1 from '../../assets/images/man protesting one.png';
 import Man2 from '../../assets/images/man protesting two.png';
 import Rectangle from '../../assets/images/irregular rectangle.png';
+import '../Section1/SectionOne.css';
 
 const Section1 = () => {
   return (
