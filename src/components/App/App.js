@@ -4,12 +4,15 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Section1 from '../Section1/Section-1';
 import path from "../../routes.js";
 import Section4 from '../Section4/Section4';
+import HomeSection from '../HomeSection/HomeSection';
+import '../HomeSection/HomeSection.css';
 import "../Section4/Section4.css"
 
 function App() {
     return ( 
     <>
         <Navbar />
+        <HomeSection />
         <Section1 />
         <Section4 />
         <Routes >
