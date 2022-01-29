@@ -1,41 +1,4 @@
-<<<<<<< HEAD
-/* * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "Roboto", sans-serif;
-}
-
-.container-mask {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	padding: 0.5rem calc((100vw - 930px) / 2);
-}
-
-.container-mask .one-card {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	padding: 20px;
-	-webkit-box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
-	box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
-}
-
-.container-mask .one-card .one-text {
-	padding-left: 30px;
-}
-
-.container-mask .one-card .one-text .one-btn {
-	color: #ff7d45;
-	text-decoration: none;
-	background-color: #003b49;
-	border-style: none;
-	border-left: 3px;
-	border-right: 2px;
-=======
-/* section .container-mask {
+section .container-mask {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +122,7 @@ section .container-mask-2 .second-half .rectangle {
   z-index: 2;
 }
 
-section .container-mask-2 .second-half registered {
+section .container-mask-2 .second-half .registered {
   color: #FFFFFF;
 }
 
@@ -169,5 +132,4 @@ section .container-mask-2 .second-half registered {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
->>>>>>> navbar
-} */
+}
