@@ -6,6 +6,7 @@ import Section4 from '../Section4/Section4';
 import HomeSection from '../HomeSection/HomeSection';
 import '../HomeSection/HomeSection.css';
 import '../Section4/Section4.css';
+import Section3 from '../Section3/Section3';
 import path from '../../routes';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <HomeSection />
       <SectionOne />
+      {/* <Section3 /> */}
       <Section4 />
       <Routes>
         <Route exact path={path.home} />

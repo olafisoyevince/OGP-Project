@@ -1,0 +1,19 @@
+.card-container {
+    display: flex;
+justify-content: center;
+/* margin-top: 9rem; */
+background:rgba(21, 23, 24, 0.5);
+
+
+}
+.card{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    border: 2px solid black;
+/* display:flex; */
+align-items: center;
+margin-right: 2px;
+    background-color: saddlebrown;
+    margin-top: 1;
+}
