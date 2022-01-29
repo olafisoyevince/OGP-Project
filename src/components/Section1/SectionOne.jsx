@@ -13,7 +13,11 @@ const Section1 = () => {
         <div className='container-mask'>
           <div className='one-card'>
             <div className='one-img'>
-              <img src={OgpLogo2} alt='' style={{ width: '50px' }} />
+              <img
+                src={OgpLogo2}
+                alt='open governance partnership'
+                style={{ width: '50px' }}
+              />
             </div>
             <div className='one-text'>
               <h4>Open Government Partnership</h4>
@@ -30,7 +34,11 @@ const Section1 = () => {
             style={{ backgroundColor: '#003B49', color: '#fff' }}
           >
             <div className='one-img'>
-              <img src={PlateauLogo} alt='' style={{ width: '50px' }} />
+              <img
+                src={PlateauLogo}
+                alt='plateau state'
+                style={{ width: '50px' }}
+              />
             </div>
             <div className='one-text'>
               <h4>Plateau State Government</h4>
@@ -67,6 +75,7 @@ const Section1 = () => {
             <div className='registered'>
               <p>15,350</p>
               <p>Registered Citizens</p>
+              <button className='one-btn'>READ MORE</button>
             </div>
           </div>
         </div>
