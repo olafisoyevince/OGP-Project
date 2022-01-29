@@ -3,19 +3,23 @@ import Navbar from '../Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SectionOne from '../Section1/SectionOne';
 import Section4 from '../Section4/Section4';
+import HomeSection from '../HomeSection/HomeSection';
+import '../HomeSection/HomeSection.css';
 import '../Section4/Section4.css';
+import path from '../../routes';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <HomeSection />
       <SectionOne />
       <Section4 />
       <Routes>
-        <Route path='/' />
-        <Route path='/reports' />
-        <Route path='/about' />
-        <Route path='/dashboard' />
+        <Route exact path={path.home} />
+        <Route exact path={path.reports} />
+        <Route exact path={path.about} />
+        <Route exact path={path.dashboard} />
       </Routes>
     </BrowserRouter>
   );
