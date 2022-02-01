@@ -8,6 +8,7 @@ import HomeSection from '../HomeSection/HomeSection';
 import '../HomeSection/HomeSection.css';
 import '../Section4/Section4.css';
 import Section3 from '../Section3/Section3';
+import Footer from '../Footer/Footer';
 import path from '../../routes';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route exact path={path.about} />
         <Route exact path={path.dashboard} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
