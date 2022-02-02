@@ -6,72 +6,96 @@ import Wed from '../assets/images/[GetPaidStock 2.svg';
 const Section3 = () => {
     return (
     <>
-     <div  style={{width:'100vw',display:'flex'}}>
-     <div className='daddy' style={{width:'100%', height:'100vh'}}>
         <section>
-            <div className="card-container"  >
-                <div className="card" style={{backgroundColor:'rgba(0, 59, 73, 0.75) ',}}>
-            <div style={ { paddingTop:'12rem' }}> 
-                   <img src="../images/bank-icon.svg" alt="Avatar" style={{width:"50px",}}/>
-                   </div>
-                    <div className="text" style={{ marginTop:'0rem'}}>
-                    <h2>Report of Accountant<br></br> General</h2>
-                        <h4>lorem<b></b>ipsum</h4>
-                        <p></p>
-                    </div> 
-                    
-                </div>
 
-                <div className="card" style={{backgroundColor:'rgba(255, 125, 69, 0.75)' }} >
-                    <div style={ { paddingTop:'12rem' }}> 
-                    <img src="../images/cal-icon.svg" alt="Avatar" style={{width:"50px" }}/>
+            <div>
+                <div className="card-container" >
+                    <div className="card" style={{ backgroundColor: 'rgba(0, 59, 73, 0.75)' }}>
+                        <div className="card-content">
+                            <div> 
+                                <img src="../images/bank-icon.svg" alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
+                            </div>
+                            
+                            <div className="card-content-text">
+                                <h2>Report of Accountant<br></br> General</h2>
+                                <p>Comprehensive report of the <br/> Accountant General</p>
+                            </div>
+                           
+                        </div>
                     </div>
-                    <div class="text">
-                    <h2>Quarterly <br></br>Report</h2>
-                        <h4><b></b></h4>
-                        <p>card</p>
-                    </div> 
-                </div>
 
-                <div className="card" style={{backgroundColor:'rgba(255, 255, 255, 0.60)'}}>
-                <div style={ { paddingTop:'12rem' }}> 
-                    <img src="../images/document-icon.svg" alt="Avatar" style={{width:"50px"}}/>
-                </div>
-                    <div class="text">
-                    <h2>Audit <br></br>Report</h2>
-                        <h4><b></b></h4>
-                        <p>card</p>
-                    </div> 
-                </div>
-                  
-                <div className="card">
-                <div style={ { paddingTop:'12rem' }}> 
-                    <img src="../images/download-icon.svg" alt="Avatar" style={{width:"50px"}}/>
-                </div>
-                    <div class="text">
-                    <h2>All <br></br>Downloads</h2>
-                        <h4><b></b></h4>
-                        <p>card</p>
-                    </div> 
+                    <div className="card" style={{ backgroundColor: 'rgba(255, 125, 69, 0.75)' }} >
+                        <div className="card-content">
+                            <div> 
+                                <img src="../images/cal-icon.svg" alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
+                            </div>
+                            
+                            <div className="card-content-text">
+                                <h2>Quarterly<br/>Report</h2>
+                                <p>Download the Comprehensive Quarterly <br/> Report</p>
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div className="card" style={{backgroundColor: 'rgba(255, 255, 255, 0.60)'}}>
+                        <div className="card-content">
+                            <div> 
+                                <img src="../images/document-icon.svg" alt="Avatar" style={{width:"80px"}} className='card-icon'/>
+                            </div>
+                           
+                            <div className="card-content-text" style={{ color: 'black' }}>
+                                <h2>Audit<br/>Report</h2>
+                                <p>Download the Comprehensive Auditory <br/> Report</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div className="card">
+                        <div className="card-content">
+                            <div> 
+                                <img src="../images/download-icon.svg" alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
+                            </div>
+
+                            <div className="card-content-text">
+                                <h2>All<br/>Downloads</h2>
+                                <p>Find Approved Yearly Budgets</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-      </section>
-      <section >
-        <div className='new-container' style={{backgroundColor:'', width:'100%'}}>
-            <div className="new-card" style={ { paddingTop:'18rem', backgroundColor:'#003B49 ' }}></div>
-            <img src={Wed} alt="Avatar" />
-        </div>
-     
+        
+            <section >
+                <div className='new-container'>
+                    <div className='new-container-board'>
+                        <div className="text-board">
+                            <div className="new-card">
+                                <h1>Open <br/> <span>Contracting</span></h1>
+                                <p>We’re working to make public contracting fair and effective, so it <br/> provides everyone, everywhere with the public goods, works and <br/> services that they need.</p>
+                            </div>
 
+                            <div className="weird-rectangle">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non volutpat, posuere <br/> eleifend et. Egestas netus faucibus elit, dignissim vulputate. Lacus, purus <br/> neque ac phasellus amet enim nisl. Pharetra a nulla id dolor varius. Quis <br/> integer habitant risus facilisi viverra eu praesent pellentesque venenatis. <br/> Nunc, neque nisl sapien metus, pretium cras imperdiet nunc ut. Feugiat porta <br/> tellus dolor tempor tellus tempor, volutpat imperdiet. Molestie.</p>
+                            </div>
+                        </div>
+                        
+                        <img src={ Wed } alt="Avatar" />
 
-      </section>
+                        
+                    </div>
+                </div>
+            </section>
 
-      </div>
-    
-    
-    </div > 
+        
+        
+        
+        </section> 
     </>
-    )
+    );
 };
 
 
