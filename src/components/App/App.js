@@ -1,9 +1,7 @@
 import React from 'react';
-//import Navbar from '../Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//import Section1 from '../Section1/Section-1';
 import path from "../../routes.js";
-import Section3 from '../Section3/Section3';
+import Section3 from '../Section3/Section3.jsx';
 
 function App() {
   return (
@@ -20,6 +18,6 @@ function App() {
 
     </BrowserRouter>
   );
-  }
+}
 
-  export default App;
+export default App;
