@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <HomeSection />
       <SectionOne />
-      {/* <Section3 /> */}
+      <Section3 />
       <Section4 />
       <Routes>
         <Route exact path={path.home} />
