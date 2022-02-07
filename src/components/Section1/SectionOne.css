@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
 section .container-mask {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,7 +124,23 @@ section .container-mask-2 .second-half .rectangle {
 }
 
 section .container-mask-2 .second-half .registered {
-  color: #FFFFFF;
+  background-color: #FF7D45;
+  position: absolute;
+  width: 220px;
+  height: 104px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%, 17% 35%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%, 17% 35%);
+  color: white;
+  z-index: 3;
+  text-align: center;
+  padding-left: 35px;
+  padding-top: 20px;
+}
+
+section .container-mask-2 .second-half .registered h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
 }
 
 * {
