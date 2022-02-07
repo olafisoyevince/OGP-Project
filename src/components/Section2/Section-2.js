@@ -1,69 +1,79 @@
+import Card from "./Card";
+import bg43 from "../../assets/images/bg43.png";
+import bg45 from "../../assets/images/bg45.png";
+import bg48 from "../../assets/images/bg48.png";
+import upside46 from "../../assets/images/upside46.png";
+import downside47 from "../../assets/images/downside47.png";
+
+import peace from "../../assets/images/peace.png";
+import fiscal from "../../assets/images/fiscal.png";
+import gender from "../../assets/images/gender.png";
+import extract from "../../assets/images/extract.png";
+import citizens from "../../assets/images/citizens.png";
+
+import "./Style.css";
+import Path from "../../routes";
+import { Link } from "react-router-dom";
+
 function Section2() {
   return (
-    <section
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        width: "100vw",
-      }}
-    >
-      <div
-        className="section"
-        style={{
-          width: "75%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          backgroundColor: "#F5F5F5",
-        }}
-      >
+    <section className="section-2">
+      <div className="section">
         <div
           style={{
-            width: "91%",
+            backgroundImage: `url(${bg45})`,
             display: "flex",
-            flexDirection: "row-reverse",
-            marginTop: "4rem",
-            backgroundColor: "",
+            justifyContent: "flex-start",
+            alignItems: "flex-end",
+            width: "12rem",
+            height: "50rem",
+            backgroundSize: "80%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center right",
           }}
         >
           <div
             style={{
+              backgroundImage: `url(${bg48})`,
+              width: "8rem",
+              height: "25rem",
               display: "flex",
               flexDirection: "column",
-              margin: "1rem",
-              width: "100%",
-              backgroundColor: "",
+              justifyContent: "flex-start",
+              alignItems: "flex-end",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "50%",
             }}
           >
-            <div
+            <img
+              src={upside46}
+              alt="p"
               style={{
-                marginBottom: "1rem",
-                display: "flex",
-                flexDirection: "row-reverse",
-                justifyContent: "space-between",
-                alignItems: "flex-end",
+                // color: "royalblue",
+                // backgroundColor: "royalblue",
+                width: "2.5rem",
+                height: "2rem",
               }}
-            >
-              <button
-                style={{
-                  backgroundColor: "#003B49",
-                  border: "none",
-                  padding: "1rem",
-                  color: "#ffff",
-                  font: "awesome",
-                  cursor: "pointer",
-                }}
-              >
-                Login/Register
-              </button>
-              <div
-                style={{
-                  display: "flex",
-                  width: "26%",
-                  justifyContent: "space-between",
-                  font: "roboto",
-                }}
-              >
+            />
+            <img
+              src={downside47}
+              alt="p"
+              style={{
+                // color: "brown",
+                // backgroundColor: "brown",
+                width: "2.5rem",
+                height: "2rem",
+              }}
+            />
+          </div>
+        </div>
+        <div className="top" style={{ backgroundImage: `url(${bg43})` }}>
+          <div className="sideA">
+            <div className="card-title">
+              <Link to={Path.register}>
+                <button className="btn">Login/Register</button>
+              </Link>
+              <div className="Title">
                 <h1>Current</h1>
                 <h1
                   style={{
@@ -74,523 +84,68 @@ function Section2() {
                 </h1>
               </div>
             </div>
-            <div
-              style={{
-                color: "#949494",
-                width: "80%",
-              }}
-            >
-              <p>
-                Lorem ipsum dolor, sit amet consejdusjctetur adipisicing elit.
-                Architecto, neque. Quaerat velQuaeQuaerat vel rat vel,
-                reprehenderit tempore error voluptatem dicta. Tenetur, quas
-                excepturi.
+            <div>
+              <p className="description">
+                Plateau joined OGP as part of the 2020 cohort. They are
+                currently implementing five commitments from their 2021-2023
+                action plan. This action plan features commitments related to
+                open contracting, public participation, gender, and extractive
+                industries.
               </p>
             </div>
           </div>
-        </div>
-        <div
-          className="cards-container"
-          style={{
-            width: "91%",
-            display: "flex",
-            justifyContent: "space-evenly",
-            flexWrap: "wrap",
-          }}
-        >
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "0.5px solid",
-              padding: "1rem",
-              margin: "1rem",
-              width: "15.5rem",
-              backgroundColor: "#003B49 ",
-              color: "#ffff",
+              flexDirection: "row",
+              justifyContent: "center",
+              padding: "2rem",
+              width: "100%",
+              flexWrap: "wrap",
             }}
-            className="card"
           >
-            <div
-              className="icon"
+            <Card
+              imageUrl={fiscal}
+              description="Lorem ipsum dolor, sit amet consejdusjctetur adipisicing elit.
+                Architecto, neque. Quaerat vel"
+              Title="Fiscal Transparency"
+            />
+            <Card
+              imageUrl={citizens}
+              description="Lorem ipsum dolor, sit amet consejdusjctetur adipisicing elit.
+                Architecto, neque. Quaerat vel"
+              Title="Citizen Engagement"
+            />
+            <Card
+              imageUrl={extract}
+              description="Lorem ipsum dolor, sit amet consejdusjctetur adipisicing elit.
+                Architecto, neque. Quaerat vel"
+              Title="Extractive Transparency"
+            />
+            <Card
+              imageUrl={gender}
+              description="Lorem ipsum dolor, sit amet consejdusjctetur adipisicing elit.
+                Architecto, neque. Quaerat vel"
+              Title="Gender Commitment"
               style={{
-                display: "flex",
-                width: "5rem",
-                padding: "1rem",
-                marginTop: "1rem",
-                marginRight: "4.6rem",
-                backgroundColor: "#ff7d45",
+                backgroundColor: "#ffff",
+                borderBottom: "0.3rem solid #ff7d45",
               }}
-            >
-              <img src="" alt="icon" />
-            </div>
-            <div
-              className="cardTitle"
+              styleb={{ color: "rgb(170,170,170)" }}
+              stylec={{ color: "rgb(15,15,15)" }}
+            />
+            <Card
+              imageUrl={peace}
+              description="Lorem ipsum dolor, sit amet consejdusjctetur adipisicing elit.
+                Architecto, neque. Quaerat vel"
+              Title="Peace & Security"
               style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "rem",
-                justifyContent: "space-around",
-                alignItems: "flex-start",
-                height: "9rem",
-                fontFamily: "Roboto",
+                backgroundColor: "#ffff",
+                borderBottom: "0.3rem solid #ff7d45",
               }}
-            >
-              <h3>Fiscal Transparency</h3>
-              <p
-                style={{
-                  color: "#ffff",
-                  font: "Roboto",
-                  fontSize: "12px",
-                  width: "100%",
-                }}
-              >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto, neque. Quaerat vel, reprehenderit tempore error
-              </p>
-            </div>
-            <div
-              className="body"
-              style={{
-                marginBottom: "1rem",
-                fontSize: "15px",
-                font: "Roboto",
-              }}
-            >
-              <ul
-                style={{
-                  color: "#ff7d45",
-                  listStyleType: "",
-                }}
-              >
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Quaerat vel
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Qu amet consectetur
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    reprehenderit uaerat vel
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              padding: "1rem",
-              margin: "1rem",
-              border: "0.5px solid",
-              width: "15.5rem",
-              backgroundColor: "#003B49 ",
-              color: "#ffff",
-            }}
-            className="card"
-          >
-            <div
-              className="icon"
-              style={{
-                display: "flex",
-                width: "5rem",
-                padding: "1rem",
-                marginTop: "1rem",
-                marginRight: "4.6rem",
-                backgroundColor: "#ff7d45",
-              }}
-            >
-              <img src="" alt="icon" />
-            </div>
-            <div
-              className="cardTitle"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "rem",
-                justifyContent: "space-around",
-                alignItems: "flex-start",
-                height: "9rem",
-                fontFamily: "Roboto",
-              }}
-            >
-              <h3>Fiscal Transparency</h3>
-              <p
-                style={{
-                  color: "#ffff",
-                  font: "Roboto",
-                  fontSize: "12px",
-                  width: "100%",
-                }}
-              >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto, neque. Quaerat vel, reprehenderit tempore error
-              </p>
-            </div>
-            <div
-              className="body"
-              style={{
-                marginBottom: "1rem",
-                fontSize: "15px",
-                font: "Roboto",
-              }}
-            >
-              <ul
-                style={{
-                  color: "#ff7d45",
-                  listStyleType: "",
-                }}
-              >
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Quaerat vel
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Qu amet consectetur
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    reprehenderit uaerat vel
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "0.5px solid",
-              padding: "1rem",
-              margin: "1rem",
-              width: "15.5rem",
-              backgroundColor: "#003B49 ",
-              color: "#ffff",
-            }}
-            className="card"
-          >
-            <div
-              className="icon"
-              style={{
-                display: "flex",
-                width: "5rem",
-                padding: "1rem",
-                marginTop: "1rem",
-                marginRight: "4.6rem",
-                backgroundColor: "#ff7d45",
-              }}
-            >
-              <img src="" alt="icon" />
-            </div>
-            <div
-              className="cardTitle"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "rem",
-                justifyContent: "space-around",
-                alignItems: "flex-start",
-                height: "9rem",
-                fontFamily: "Roboto",
-              }}
-            >
-              <h3>Fiscal Transparency</h3>
-              <p
-                style={{
-                  color: "#ffff",
-                  font: "Roboto",
-                  fontSize: "12px",
-                  width: "100%",
-                }}
-              >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto, neque. Quaerat vel, reprehenderit tempore error
-              </p>
-            </div>
-            <div
-              className="body"
-              style={{
-                marginBottom: "1rem",
-                fontSize: "15px",
-                font: "Roboto",
-              }}
-            >
-              <ul
-                style={{
-                  color: "#ff7d45",
-                  listStyleType: "",
-                }}
-              >
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Quaerat vel
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Qu amet consectetur
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    reprehenderit uaerat vel
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "0.5px solid",
-              padding: "1rem",
-              margin: "1rem",
-              width: "15.5rem",
-              backgroundColor: "#003B49 ",
-              color: "#ffff",
-            }}
-            className="card"
-          >
-            <div
-              className="icon"
-              style={{
-                display: "flex",
-                width: "5rem",
-                padding: "1rem",
-                marginTop: "1rem",
-                marginRight: "4.6rem",
-                backgroundColor: "#ff7d45",
-              }}
-            >
-              <img src="" alt="icon" />
-            </div>
-            <div
-              className="cardTitle"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "rem",
-                justifyContent: "space-around",
-                alignItems: "flex-start",
-                height: "9rem",
-                fontFamily: "Roboto",
-              }}
-            >
-              <h3>Fiscal Transparency</h3>
-              <p
-                style={{
-                  color: "#ffff",
-                  font: "Roboto",
-                  fontSize: "12px",
-                  width: "100%",
-                }}
-              >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto, neque. Quaerat vel, reprehenderit tempore error
-              </p>
-            </div>
-            <div
-              className="body"
-              style={{
-                marginBottom: "1rem",
-                fontSize: "15px",
-                font: "Roboto",
-              }}
-            >
-              <ul
-                style={{
-                  color: "#ff7d45",
-                  listStyleType: "",
-                }}
-              >
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Quaerat vel
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Qu amet consectetur
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    reprehenderit uaerat vel
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "0.5px solid",
-              padding: "1rem",
-              margin: "1rem",
-              width: "15.5rem",
-              backgroundColor: "#003B49 ",
-              color: "#ffff",
-            }}
-            className="card"
-          >
-            <div
-              className="icon"
-              style={{
-                display: "flex",
-                width: "5rem",
-                padding: "1rem",
-                marginTop: "1rem",
-                marginRight: "4.6rem",
-                backgroundColor: "#ff7d45",
-              }}
-            >
-              <img src="" alt="icon" />
-            </div>
-            <div
-              className="cardTitle"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "rem",
-                justifyContent: "space-around",
-                alignItems: "flex-start",
-                height: "9rem",
-                fontFamily: "Roboto",
-              }}
-            >
-              <h3>Fiscal Transparency</h3>
-              <p
-                style={{
-                  color: "#ffff",
-                  font: "Roboto",
-                  fontSize: "12px",
-                  width: "100%",
-                }}
-              >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto, neque. Quaerat vel, reprehenderit tempore error
-              </p>
-            </div>
-            <div
-              className="body"
-              style={{
-                marginBottom: "1rem",
-                fontSize: "15px",
-                font: "Roboto",
-              }}
-            >
-              <ul
-                style={{
-                  color: "#ff7d45",
-                  listStyleType: "",
-                }}
-              >
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Quaerat vel
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    Qu amet consectetur
-                  </span>
-                </li>
-                <br />
-                <li>
-                  <span
-                    style={{
-                      color: "#ffff",
-                    }}
-                  >
-                    reprehenderit uaerat vel
-                  </span>
-                </li>
-              </ul>
-            </div>
+              styleb={{ color: "rgb(170,170,170)" }}
+              stylec={{ color: "rgb(15,15,15)" }}
+            />
           </div>
         </div>
       </div>

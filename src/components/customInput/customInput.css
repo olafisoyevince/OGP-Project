@@ -1,0 +1,9 @@
+.customInput {
+    border-radius: 15px;
+    /* font-size: 0.7rem; */
+    padding: 0.99rem;
+    width: 30%;
+    margin: 1rem;
+    border:0.5px solid;
+    outline: none;
+}
