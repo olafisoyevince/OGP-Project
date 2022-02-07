@@ -128,11 +128,17 @@ section {
         z-index: 3;
         text-align: center;
         padding-left: 35px;
-        padding-top: 20px;
-
+        padding-top: 15px;
+        left: 340px;
+        top: 305px;
+        
         & h3 {
           font-size: 2rem;
           font-weight: 200;
+          font-family: 'Poppins', sans-serif;
+        }
+
+        & p {
           font-family: 'Poppins', sans-serif;
         }
       }
