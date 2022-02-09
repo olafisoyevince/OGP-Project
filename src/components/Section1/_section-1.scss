@@ -4,8 +4,6 @@
 section {
 
   & .container-mask {
-    display: flex;
-    padding: 0.5rem calc((100vw - 930px) / 2);
   
     & .one-card {
       display: flex; 
@@ -58,18 +56,14 @@ section {
   }
 
   & .container-mask-2 {
-    display: flex;
-    padding: 0.5rem calc((100vw - 930px) / 2);
-    margin-top: 80px;
+    margin-top: 20px;
 
     & .two-card {
-      width: 50%;
+      
       
       & h3 {
         font-weight: 500;
-        font-size: 2rem;
         letter-spacing: 0.5px;
-        width: 80%;
 
         & span {
           color: #FF7D45;
@@ -79,8 +73,7 @@ section {
       & p {
         color: #7D7D7D;
         width: 85%;
-        font-size: 0.8rem;
-        line-height: 24px;
+        
         padding-top: 25px;
         padding-bottom: 25px;
       }
@@ -100,14 +93,11 @@ section {
 
       & .man1 {
         position: absolute;
-        top: 125px;
-        left: -9px;
         z-index: 2;
       }
   
       & .man2 {
         position: absolute;
-        left: 132px;
         z-index: 1;
       }
   
@@ -121,19 +111,12 @@ section {
       & .registered {
         background-color: #FF7D45;
         position: absolute;
-        width: 220px;
-        height: 104px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%, 17% 35%);
         color: white;
         z-index: 3;
         text-align: center;
-        padding-left: 35px;
-        padding-top: 15px;
-        left: 340px;
-        top: 305px;
         
         & h3 {
-          font-size: 2rem;
           font-weight: 200;
           font-family: 'Poppins', sans-serif;
         }
@@ -146,3 +129,221 @@ section {
   }
 }
 
+
+@media only screen and (min-width: 1024px) {
+  .container-mask {
+    padding: 0.5rem calc((100vw - 930px) / 2);
+    display: flex;
+  }
+
+  .container-mask-2 {
+    padding: 0.5rem calc((100vw - 930px) / 2);
+    display: flex;
+  }
+
+  .man1 {
+    top: 125px;
+    left: -9px;
+  }
+
+  .man2 {
+    left: 132px;
+  }
+
+  .registered {
+    width: 220px;
+    height: 104px;
+    left: 340px;
+    top: 305px;
+    padding-top: 15px;
+    padding-left: 35px;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .two-card {
+    width: 50%;
+
+    & h3 {
+      font-size: 2rem;
+      width: 80%;
+    } 
+
+    & p{
+      line-height: 24px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container-mask {
+    padding: 0.5rem calc((100vw - 685px) / 2);
+    display: flex;
+  }
+
+  .container-mask-2 {
+    padding: 0.5rem calc((100vw - 685px) / 2);
+    display: flex;
+  }
+
+  .two-card {
+    width: 50%;
+
+    & h3 {
+      font-size: 2rem;
+      width: 100%;
+    } 
+
+    & p{
+      line-height: 20px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .man1 {
+    width: 190px;
+    left: -20px;
+    top: 120px;
+  }
+
+  .man2 {
+    width: 260px;
+    left:  80px;
+  }
+
+  .registered {
+    width: 180px;
+    height: 80px;
+    left: 203px;
+    top: 260px;
+    padding-top: 8px;
+    padding-left: 28px;
+    
+    & h3 {
+      font-size: 1.5rem;
+    }
+
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 435px) {
+  .container-mask {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .container-mask-2 {
+    display: block;
+    padding: 0 30px;
+
+    & .second-half {
+      margin-top: 30px;
+    }
+  }
+
+  .two-card {
+    width: 100%;
+
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .registered {
+    width: 150px;
+    height: 60px;
+    left: 190px;
+    top: 236px;
+
+    & h3 {
+      font-size: 1.2rem;
+    }
+
+    & p {
+      font-size: 0.7rem;
+    }
+  }
+
+  .man2 {
+    width: 230px;
+    left:  60px;
+  }
+
+  .man1 {
+    width: 170px;
+    left: -3px;
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container-mask {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .container-mask-2 {
+    display: block;
+    padding: 0 30px;
+
+    & .second-half {
+      margin-top: 30px;
+    }
+  }
+
+  .one-text {
+    
+    & h4 {
+      font-size: 0.9rem;
+    }
+
+    & p {
+      line-height: 15px;
+    }
+  }
+
+  .two-card {
+    width: 100%;
+
+    & h3 {
+      font-size: 1.6rem;
+    }
+
+    & p {
+      font-size: 0.7rem;
+      line-height: 15px;
+    }
+  }
+
+  .man2 {
+    width: 210px;
+    left: 20px;
+  }
+
+  .man1 {
+    width: 130px;
+    top: 110px;
+  }
+
+  .registered {
+    width: 140px;
+    height: 60px;
+    left: 140px;
+    top: 200px;
+
+    & h3 {
+      font-size: 1.2rem;
+    }
+
+    & p {
+      font-size: 0.7rem;
+    }
+  }
+}
