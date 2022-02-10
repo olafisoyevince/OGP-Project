@@ -1,5 +1,5 @@
 import React from "react";
-import './Card.css';
+import './Section3.css';
 import Wed from '../assets/images/[GetPaidStock 2.svg';
 
 
@@ -51,7 +51,7 @@ const Section3 = () => {
                             
                         </div>
                     </div>
-                    
+
                     <div className="card">
                         <div className="card-content">
                             <div> 
