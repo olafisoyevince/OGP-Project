@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    background-image: url('../assets/images/headway-5QgIuuBxKwM-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card{
+    width: 100%;
+}
+
+.card-icon {
+    padding-bottom: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 7rem;
+}
+
+.card-content-text {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-content-text h2 {
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 10px;
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .card {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(34, 34, 34, 0.604);
+    }
+}
+
+.new-container {
+    background-color: #003B49;
+}
+
+.new-container-board {
+    padding: 80px calc((100vw - 930px) / 2);
+    display: flex;
+    color: white;
+    gap: 50px;
+}
+
+.new-container-board .text-board {
+    padding-top: 50px;
+}
+
+.new-card h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+
+}
+
+.new-card p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.new-card h1 span {
+    color: #FF7D45;
+}
+
+.weird-rectangle {
+    width: 130%;
+    height: 230px;
+    position: relative;
+    top: 50px;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 92% 17%, 92% 100%, 0 100%, 0% 50%);
+    background: #FF7D45;
+}
+
+.weird-rectangle p {
+    font-size: 12px;
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+    padding-left: 65px;
+    padding-top: 30px;
+}
