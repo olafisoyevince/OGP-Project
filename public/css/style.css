@@ -1,0 +1,216 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/* * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.container-mask {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0.5rem calc((100vw - 930px) / 2);
+}
+
+.container-mask .one-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px;
+	-webkit-box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-mask .one-card .one-text {
+	padding-left: 30px;
+}
+
+.container-mask .one-card .one-text .one-btn {
+	color: #ff7d45;
+	text-decoration: none;
+	background-color: #003b49;
+	border-style: none;
+	border-left: 3px;
+	border-right: 2px;
+=======
+>>>>>>> origin/main
+/* section .container-mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem calc((100vw - 930px) / 2);
+}
+
+section .container-mask .one-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 20px;
+  -webkit-box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+}
+
+section .container-mask .one-card .one-text {
+  padding-left: 30px;
+}
+
+section .container-mask .one-card .one-text h4 {
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+section .container-mask .one-card .one-text p {
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+section .container-mask .one-card .one-text .one-btn {
+  color: #FF7D45;
+  text-decoration: none;
+  background-color: white;
+  border-style: none;
+  border-left: 2px solid #FF7D45;
+  border-right: 2px solid #FF7D45;
+  padding: 0 6px;
+  letter-spacing: 1px;
+  width: 80px;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+section .container-mask .one-card .one-text .one-btn-2 {
+  color: #FF7D45;
+  text-decoration: none;
+  background-color: #003B49;
+  border-style: none;
+  border-left: 2px solid #FF7D45;
+  border-right: 2px solid #FF7D45;
+  padding: 0 6px;
+  letter-spacing: 1px;
+  width: 80px;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+section .container-mask-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem calc((100vw - 930px) / 2);
+  margin-top: 80px;
+}
+
+section .container-mask-2 .two-card {
+  width: 50%;
+}
+
+section .container-mask-2 .two-card h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  width: 80%;
+}
+
+section .container-mask-2 .two-card h3 span {
+  color: #FF7D45;
+}
+
+section .container-mask-2 .two-card p {
+  color: #7D7D7D;
+  width: 85%;
+  font-size: 0.8rem;
+  line-height: 24px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+section .container-mask-2 .two-card button {
+  color: #003B49;
+  text-decoration: none;
+  background-color: #F5F5F5;
+  border-style: none;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+section .container-mask-2 .second-half {
+  position: relative;
+}
+
+section .container-mask-2 .second-half .man1 {
+  position: absolute;
+  top: 125px;
+  left: -9px;
+  z-index: 2;
+}
+
+section .container-mask-2 .second-half .man2 {
+  position: absolute;
+  left: 132px;
+  z-index: 1;
+}
+
+section .container-mask-2 .second-half .rectangle {
+  position: absolute;
+  left: 345px;
+  top: 304px;
+  z-index: 2;
+}
+
+section .container-mask-2 .second-half registered {
+  color: #FFFFFF;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
+=======
+/* * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.container-mask {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0.5rem calc((100vw - 930px) / 2);
+}
+
+.container-mask .one-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px;
+	-webkit-box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-mask .one-card .one-text {
+	padding-left: 30px;
+}
+
+.container-mask .one-card .one-text .one-btn {
+	color: #ff7d45;
+	text-decoration: none;
+	background-color: #003b49;
+	border-style: none;
+	border-left: 3px;
+	border-right: 2px;
+>>>>>>> origin/ft-sectionTwo
+=======
+>>>>>>> navbar
+>>>>>>> origin/main
+} */
