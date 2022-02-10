@@ -3,7 +3,6 @@ import OgpLogo2 from '../../assets/images/ogp-logo-2.png';
 import PlateauLogo from '../../assets/images/plateau-logo.png';
 import Man1 from '../../assets/images/man protesting one.png';
 import Man2 from '../../assets/images/man protesting two.png';
-import Rectangle from '../../assets/images/irregular rectangle.png';
 import '../Section1/SectionOne.css';
 
 const Section1 = () => {
@@ -67,17 +66,14 @@ const Section1 = () => {
             </p>
             <button>Login/Register</button>
           </div>
-
-          <div className='second-half'>
-            <img src={Man1} alt='' className='man1' />
-            <img src={Man2} alt='' className='man2' />
-            <img src={Rectangle} alt='' className='rectangle' />
-            <div className='registered'>
-              <p>15,350</p>
-              <p>Registered Citizens</p>
-              <button className='one-btn'>READ MORE</button>
-            </div>
-          </div>
+           <div className='second-half'>
+             <img src={ Man1 } alt="" className='man1'/>
+             <img src={ Man2 } alt="" className='man2'/>
+             <div className='registered'>
+               <h3>15,350</h3>
+               <p>Registered Citizens</p>
+             </div>
+           </div>
         </div>
       </section>
     </>
