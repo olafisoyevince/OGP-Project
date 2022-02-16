@@ -1,6 +1,10 @@
 import React from "react";
 import './Section3.css';
-import Wed from '../assets/images/[GetPaidStock 2.svg';
+import Wed from '../../assets/images/section3bg.svg';
+import BankIcon from '../../assets/images/bank-icon.svg';
+import CalIcon from '../../assets/images/cal-icon.svg';
+import DocumentIcon from '../../assets/images/document-icon.svg'
+import DownloadIcon from '../../assets/images/download-icon.svg'
 
 
 const Section3 = () => {
@@ -13,7 +17,7 @@ const Section3 = () => {
                     <div className="card" style={{ backgroundColor: 'rgba(0, 59, 73, 0.75)' }}>
                         <div className="card-content">
                             <div> 
-                                <img src="../images/bank-icon.svg" alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
+                                <img src={ BankIcon } alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
                             </div>
                             
                             <div className="card-content-text">
@@ -27,7 +31,7 @@ const Section3 = () => {
                     <div className="card" style={{ backgroundColor: 'rgba(255, 125, 69, 0.75)' }} >
                         <div className="card-content">
                             <div> 
-                                <img src="../images/cal-icon.svg" alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
+                                <img src={ CalIcon } alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
                             </div>
                             
                             <div className="card-content-text">
@@ -41,7 +45,7 @@ const Section3 = () => {
                     <div className="card" style={{backgroundColor: 'rgba(255, 255, 255, 0.60)'}}>
                         <div className="card-content">
                             <div> 
-                                <img src="../images/document-icon.svg" alt="Avatar" style={{width:"80px"}} className='card-icon'/>
+                                <img src={ DocumentIcon } alt="Avatar" style={{width:"80px"}} className='card-icon'/>
                             </div>
                            
                             <div className="card-content-text" style={{ color: 'black' }}>
@@ -55,7 +59,7 @@ const Section3 = () => {
                     <div className="card">
                         <div className="card-content">
                             <div> 
-                                <img src="../images/download-icon.svg" alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
+                                <img src={  DownloadIcon } alt="Avatar" style={{ width:"80px" }} className='card-icon'/>
                             </div>
 
                             <div className="card-content-text">

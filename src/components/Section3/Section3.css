@@ -8,7 +8,7 @@
 
 .card-container {
     display: flex;
-    background-image: url('../assets/images/headway-5QgIuuBxKwM-unsplash.jpg');
+    background-image: url('../../assets/images/headway-5QgIuuBxKwM-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

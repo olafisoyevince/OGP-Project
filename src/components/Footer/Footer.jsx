@@ -9,7 +9,7 @@ const Footer = () => {
       <footer>
         <div>
           <span>
-            <img src={logo} alt='ogp-logo' />
+            <img src={logo} alt='ogp-logo' style={{ width: '150px' }} />
           </span>
           <div>
             <p>

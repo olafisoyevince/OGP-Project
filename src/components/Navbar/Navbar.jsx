@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Nav, Bars, NavMenu, NavLink, NavBtnLink } from './NavbarElements';
-import OgpLogo from '../../assets/images/ogp-logo.png';
+// import OgpLogo from '../../assets/images/ogp-logo.png';
 
 import OGPLOGO from '../../assets/images/ogp-logo.png';
 
