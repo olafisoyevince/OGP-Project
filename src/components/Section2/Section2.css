@@ -1,0 +1,74 @@
+.section2-content {
+  height: 123vh;
+  background: #ebebeb;
+  position: relative;
+}
+
+.section2-content .section2-top {
+  padding: 0.1rem calc((100vw - 930px) / 2);
+  display: flex;
+  position: absolute;
+  top: 130px;
+  gap: 40px;
+}
+
+/* .section2-content .section2-top .section2-text {
+  
+} */
+
+.section2-content .section2-top .section2-text h1 {
+  font-size: 2rem;
+}
+
+.section2-content .section2-top .section2-text h1 span {
+  color: #FF7D45;
+}
+
+.section2-content .section2-top .section2-text p {
+  font-size: 12px;
+  line-height: 1.3rem;
+  padding-top: 12px;
+}
+
+.section2-content .section2-top .section2-button button {
+  color: #F5F5F5;
+  text-decoration: none;
+  background-color: #003B49;
+  border-style: none;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+.section2-content .section2-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0.1rem calc((100vw - 930px) / 2);
+  position: absolute; 
+  bottom: 50px;
+}
+
+.section2-content .section2-cards .section2-card-content {
+  height: 300px;
+  width: 290px;
+  padding: 30px;
+}
+
+.section2-content .section2-cards .section2-card-content .section2-card-title {
+  padding: 15px 0;
+}
+
+.section2-content .section2-cards .section2-card-content .section2-card-text {
+  font-size: 12px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.section2-content .section2-cards .section2-card-content .section2-list {
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 1.7rem;
+}
+
+

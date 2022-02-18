@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SectionOne from '../Section1/SectionOne';
-import Section2 from '../Section2/Section-2';
+import Section2 from '../Section2/Section2';
 import Section4 from '../Section4/Section4';
 import HomeSection from '../HomeSection/HomeSection';
 import '../HomeSection/HomeSection.css';

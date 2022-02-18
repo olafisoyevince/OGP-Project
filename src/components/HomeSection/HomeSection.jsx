@@ -1,20 +1,24 @@
-import bg from '../../assets/images/bg.png';
+import React from 'react';
 
 
 const HomeSection = () => {
   return (
-    <div className="bg__header">
-      <div className="bg__wrapper_img" style={{ backgroundImage: `url(${bg})`, width: '100%', height: '700', }}>
-        <div className='bg_overlay'>
-          <div className="bg__wrapper_info" style={{ display: 'inline-block', marginLeft: '200px', marginTop: '50px'}} >
-          <h2 className="bg__header-h1">Plateau State Open <br/> Government Partnership</h2>
-          <p className="text_p" style={{ margin: '4rem 0' }}>Lorem ipsum dolor sit amet, consectetur Sit tellus lobortis sed senectus vivamus molestie. 
-          <br/> Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-          <div><button type="button" className="custom_button">Login/Register</button></div>
+    <section>
+      <div className="home-section">
+        <div className="home-content">
+          <div className="home-content-text">
+            <h1>Plateau State Open <br />Government Partnership</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, eget pellentesque vitae dui risus cras id turpis sed.</p>
+            <div className="home-button">
+              <button action="submit" className="home-login-btn">Login/Register</button>
+              <a href='#' className="home-login-btn-2">Support</a>
+            </div>
           </div>
+          
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-    export default HomeSection;
+
+export default HomeSection;

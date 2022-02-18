@@ -28,7 +28,7 @@ const Navbar = () => {
           <NavLink to={path.dashboard} activestyle='true'>
             Dashboard
           </NavLink>
-          <NavBtnLink to={path.login}>Login</NavBtnLink>
+          <NavBtnLink to={path.login}>Login/Register</NavBtnLink>
         </NavMenu>
       </Nav>
     </>

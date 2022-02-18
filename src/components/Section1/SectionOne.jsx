@@ -8,7 +8,7 @@ import '../Section1/SectionOne.css';
 const Section1 = () => {
   return (
     <>
-      <section>
+      <section className="section-one-container">
         <div className='container-mask'>
           <div className='one-card'>
             <div className='one-img'>
@@ -53,7 +53,7 @@ const Section1 = () => {
         <div className='container-mask-2'>
           <div className='two-card'>
             <h3>
-              Government + Click&Tell = <span>Citizen Engagement</span>
+              Government + Click&Tell = <br /> <span>Citizen Engagement</span>
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum

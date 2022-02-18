@@ -1,29 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
-section .container-mask .one-card {
+.section-one-container {
+  position: relative;
+  height: 80vh;
+  display: block;
+}
+
+.section-one-container .container-mask .one-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   padding: 30px 20px;
   -webkit-box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
           box-shadow: -1px 5px 27px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
 }
 
-section .container-mask .one-card .one-text {
-  padding-left: 30px;
-}
-
-section .container-mask .one-card .one-text h4 {
+.section-one-container .container-mask .one-card .one-text h4 {
   letter-spacing: 1px;
-  padding-bottom: 10px;
 }
 
-section .container-mask .one-card .one-text p {
+.section-one-container .container-mask .one-card .one-text p {
   font-size: 0.7rem;
-  padding-bottom: 10px;
   line-height: 20px;
 }
 
-section .container-mask .one-card .one-text .one-btn {
+.section-one-container .container-mask .one-card .one-text .one-btn {
   color: #FF7D45;
   text-decoration: none;
   background-color: white;
@@ -37,7 +39,7 @@ section .container-mask .one-card .one-text .one-btn {
   font-weight: bold;
 }
 
-section .container-mask .one-card .one-text .one-btn-2 {
+.section-one-container .container-mask .one-card .one-text .one-btn-2 {
   color: #FF7D45;
   text-decoration: none;
   background-color: #003B49;
@@ -51,27 +53,25 @@ section .container-mask .one-card .one-text .one-btn-2 {
   font-weight: bold;
 }
 
-section .container-mask-2 {
+.section-one-container .container-mask-2 {
   margin-top: 20px;
 }
 
-section .container-mask-2 .two-card h3 {
+.section-one-container .container-mask-2 .two-card h3 {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 
-section .container-mask-2 .two-card h3 span {
+.section-one-container .container-mask-2 .two-card h3 span {
   color: #FF7D45;
 }
 
-section .container-mask-2 .two-card p {
+.section-one-container .container-mask-2 .two-card p {
   color: #7D7D7D;
   width: 85%;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
-section .container-mask-2 .two-card button {
+.section-one-container .container-mask-2 .two-card button {
   color: #003B49;
   text-decoration: none;
   background-color: #F5F5F5;
@@ -80,28 +80,28 @@ section .container-mask-2 .two-card button {
   font-weight: bold;
 }
 
-section .container-mask-2 .second-half {
+.section-one-container .container-mask-2 .second-half {
   position: relative;
 }
 
-section .container-mask-2 .second-half .man1 {
+.section-one-container .container-mask-2 .second-half .man1 {
   position: absolute;
   z-index: 2;
 }
 
-section .container-mask-2 .second-half .man2 {
+.section-one-container .container-mask-2 .second-half .man2 {
   position: absolute;
   z-index: 1;
 }
 
-section .container-mask-2 .second-half .rectangle {
+.section-one-container .container-mask-2 .second-half .rectangle {
   position: absolute;
   left: 345px;
   top: 304px;
   z-index: 2;
 }
 
-section .container-mask-2 .second-half .registered {
+.section-one-container .container-mask-2 .second-half .registered {
   background-color: #FF7D45;
   position: absolute;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%, 17% 35%);
@@ -111,27 +111,43 @@ section .container-mask-2 .second-half .registered {
   text-align: center;
 }
 
-section .container-mask-2 .second-half .registered h3 {
+.section-one-container .container-mask-2 .second-half .registered h3 {
   font-weight: 200;
   font-family: 'Poppins', sans-serif;
 }
 
-section .container-mask-2 .second-half .registered p {
+.section-one-container .container-mask-2 .second-half .registered p {
   font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (min-width: 1024px) {
+  .section-one-container {
+    height: 80vh;
+  }
   .container-mask {
-    padding: 0.5rem calc((100vw - 930px) / 2);
+    padding: 0.1rem calc((100vw - 930px) / 2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    top: -25px;
+  }
+  .container-mask .one-text {
+    padding-left: 30px;
+  }
+  .container-mask .one-text h4 {
+    padding-bottom: 10px;
+  }
+  .container-mask .one-text p {
+    padding-bottom: 10px;
   }
   .container-mask-2 {
     padding: 0.5rem calc((100vw - 930px) / 2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    bottom: 0;
   }
   .man1 {
     top: 125px;
@@ -161,32 +177,52 @@ section .container-mask-2 .second-half .registered p {
   .two-card p {
     line-height: 24px;
     font-size: 0.8rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .section-one-container {
+    height: 110vh;
+  }
   .container-mask {
     padding: 0.5rem calc((100vw - 685px) / 2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    top: -25px;
+  }
+  .container-mask .one-text {
+    padding-left: 7px;
+  }
+  .container-mask .one-text h4 {
+    padding-bottom: 3px;
+  }
+  .container-mask .one-text p {
+    padding-bottom: 3px;
   }
   .container-mask-2 {
     padding: 0.5rem calc((100vw - 685px) / 2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    bottom: 0;
   }
   .two-card {
     width: 50%;
   }
   .two-card h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     width: 100%;
   }
   .two-card p {
     line-height: 20px;
     font-size: 0.8rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .man1 {
     width: 190px;
@@ -214,9 +250,21 @@ section .container-mask-2 .second-half .registered p {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 435px) {
+  .section-one-container {
+    height: 140vh;
+  }
   .container-mask {
     display: block;
     padding: 0 30px;
+  }
+  .container-mask .one-text {
+    padding-left: 7px;
+  }
+  .container-mask .one-text h4 {
+    padding-bottom: 3px;
+  }
+  .container-mask .one-text p {
+    padding-bottom: 3px;
   }
   .container-mask-2 {
     display: block;
