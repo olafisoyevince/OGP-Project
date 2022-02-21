@@ -3,7 +3,7 @@
 
 .section-one-container {
   position: relative;
-  height: 80vh;
+  // height: 80vh;
   display: block;
   
   & .container-mask {
@@ -135,7 +135,7 @@
 
 @media only screen and (min-width: 1024px) {
   .section-one-container {
-    height: 80vh;
+    height: 88vh;
   }
 
   .container-mask {
@@ -161,7 +161,7 @@
     padding: 0.5rem calc((100vw - 930px) / 2);
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
   }
 
   .man1 {
@@ -205,7 +205,7 @@
 
 @media only screen and (max-width: 768px) {
   .section-one-container {
-    height: 110vh;
+    height: 90vh;
   }
 
   .container-mask {
@@ -281,7 +281,7 @@
 
 @media only screen and (min-width: 360px) and (max-width: 435px) {
   .section-one-container {
-    height: 140vh;
+    height: 170vh;
   }
 
   .container-mask {
@@ -304,6 +304,8 @@
   .container-mask-2 {
     display: block;
     padding: 0 30px;
+    position: absolute;
+    bottom: 295px;
 
     & .second-half {
       margin-top: 30px;

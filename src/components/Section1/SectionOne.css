@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
 .section-one-container {
   position: relative;
-  height: 80vh;
   display: block;
 }
 
@@ -122,7 +121,7 @@
 
 @media only screen and (min-width: 1024px) {
   .section-one-container {
-    height: 80vh;
+    height: 88vh;
   }
   .container-mask {
     padding: 0.1rem calc((100vw - 930px) / 2);
@@ -147,7 +146,7 @@
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
   }
   .man1 {
     top: 125px;
@@ -184,7 +183,7 @@
 
 @media only screen and (max-width: 768px) {
   .section-one-container {
-    height: 110vh;
+    height: 90vh;
   }
   .container-mask {
     padding: 0.5rem calc((100vw - 685px) / 2);
@@ -251,7 +250,7 @@
 
 @media only screen and (min-width: 360px) and (max-width: 435px) {
   .section-one-container {
-    height: 140vh;
+    height: 170vh;
   }
   .container-mask {
     display: block;
@@ -269,6 +268,8 @@
   .container-mask-2 {
     display: block;
     padding: 0 30px;
+    position: absolute;
+    bottom: 295px;
   }
   .container-mask-2 .second-half {
     margin-top: 30px;

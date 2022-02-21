@@ -12,9 +12,8 @@
     display: flex;
     gap: 25px;
     margin-bottom: 15%;
-   
 }
-span{
+.section_head span{
     color:#FF7D45;
 }
 .section_card1{
@@ -32,13 +31,14 @@ span{
     top: 47.5%;
     background-color: #FF7D45;
     color: white;
-    padding: 5px; 
+    padding: 5px;   
     left: 30px;
 }
-.local_govt p{
+.local_govt .local_govt_text{
     text-align: center;
     font-size: 9px;
     font-weight: 700;
+    padding: 5px;  
 }
 .section_title{
     width: 100%;
@@ -58,3 +58,49 @@ span{
     font-size: 12px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px) {
+    .container_shell{
+        padding: 0.5rem calc((100vw - 930px) / 2);   
+    }
+
+    .section_card{
+        display: flex;
+    }
+
+    .section_card1{
+        width: calc(100% / 3);
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .container_shell{
+        padding: 0.5rem calc((100vw - 685px) / 2);
+    }
+
+    .section_card{
+        display: flex;
+    }
+
+    .section_card1{
+        width: calc(100% / 3);
+    }
+}
+  
+@media screen and (max-width: 450px) {
+    .container_shell{
+        padding: 0 30px
+    }
+
+    .section_card{
+        display: block;
+    }
+
+    .section_card1{
+        width: 100%;
+    }
+}
+  
+  
+  
+  

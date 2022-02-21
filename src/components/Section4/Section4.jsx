@@ -12,7 +12,7 @@ const Section4 = () => {
                         <div className="section_card1">
                             <img src={CardImage} alt="image4" className="section_img"/>
                             <div className="local_govt">
-                                <p> JOS SOUTH</p>
+                                <p className='local_govt_text'> JOS SOUTH</p>
                             </div>
                             <div className="section_title">
                                 <h1>Construction of Zaramangada Road</h1>
@@ -23,7 +23,7 @@ const Section4 = () => {
                         <div className="section_card1">
                             <img src={CardImage} alt="image4" className="section_img"/>
                             <div className="local_govt">
-                                <p> JOS NORTH</p>
+                                <p className='local_govt_text'> JOS NORTH</p>
                             </div>
                             <div className="section_title">
                                 <h1>Renovation of Plateau State Specialist Hospital</h1>
@@ -34,7 +34,7 @@ const Section4 = () => {
                         <div className="section_card1">
                             <img src={CardImage} alt="image4" className="section_img"/>
                             <div className="local_govt">
-                                <p> JOS SOUTH</p>
+                                <p className='local_govt_text'> JOS SOUTH</p>
                             </div>
                             <div className="section_title">
                                 <h1>Construction of Jos Main Airport</h1>

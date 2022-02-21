@@ -1,14 +1,13 @@
 .section2-content {
-  height: 123vh;
   background: #ebebeb;
   position: relative;
 }
 
 .section2-content .section2-top {
   padding: 0.1rem calc((100vw - 930px) / 2);
-  display: flex;
+  /* display: flex; */
   position: absolute;
-  top: 130px;
+
   gap: 40px;
 }
 
@@ -70,5 +69,42 @@
   font-size: 12px;
   line-height: 1.7rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .section2-content {
+    height: 123vh;
+  }
+
+  .section2-content .section2-top {
+    padding: 0.1rem calc((100vw - 930px) / 2);
+    display: flex;
+    top: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2-content {
+    height: 210vh;
+  }
+
+  .section2-content .section2-top {
+    padding: 0.1rem calc((100vw - 685px) / 2);
+    display: block;
+    top: 130px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section2-content {
+    height: 310vh;
+  }
+
+  .section2-content .section2-top {
+    padding: 0 30px;
+    display: block;
+    top: 50px;
+  }
+}
+
 
 

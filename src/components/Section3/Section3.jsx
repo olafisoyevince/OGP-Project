@@ -87,7 +87,7 @@ const Section3 = () => {
                             </div>
                         </div>
                         
-                        <img src={ Wed } alt="Avatar" />
+                        <img src={ Wed } alt="Avatar"className='section3img' />
 
                         
                     </div>
